@@ -7,7 +7,7 @@ import Experience from "./Experience.tsx";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Suspense fallback={null}>
-      <Canvas>
+      <Canvas style={{ height: "100vh" }}>
         <Experience />
       </Canvas>
     </Suspense>

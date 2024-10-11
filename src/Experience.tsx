@@ -1,10 +1,12 @@
-import { Html } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 
 const Experience = () => {
   return (
-    <Html>
-      <p className="text-red-500">Hello world</p>
-    </Html>
+    <mesh>
+      <OrbitControls />
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color="hotpink" />
+    </mesh>
   );
 };
 
